@@ -11,3 +11,45 @@
 .dropdown-toggle::after {
   color: #ff4f37;
 }
+.share-btn {
+  cursor: pointer;
+  position: absolute;
+  right: 15%;
+  bottom: 10%;
+}
+.carousel-caption {
+  text-align: left;
+  top: 30%;
+  bottom: 40%;
+}
+.carousel-caption h3 {
+  color: #fff;
+  font-size: 65px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.carousel-caption p {
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.center-pro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center-pro h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 400;
+  color: #464646;
+}
+.center-pro h2::after {
+  content: "01";
+  position: absolute;
+  font-size: 26px;
+  color: #cbcbcb;
+  z-index: -1;
+  font-weight: 800;
+}
