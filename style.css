@@ -42,14 +42,20 @@
 .center-pro h2 {
   text-transform: uppercase;
   font-size: 30px;
-  font-weight: 400;
   color: #464646;
+  font-weight: 400;
+}
+.center-pro i {
+  margin: 0px 10px;
+  color: #cbcbcb;
 }
 .center-pro h2::after {
   content: "01";
   position: absolute;
-  font-size: 26px;
-  color: #cbcbcb;
+  color: #f4f4f4;
+  font-size: 56px;
   z-index: -1;
   font-weight: 800;
+  bottom: -50px;
+  right: 48%;
 }

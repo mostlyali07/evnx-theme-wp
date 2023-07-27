@@ -20,6 +20,14 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/2.3.4/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/2.3.4/owl.theme.default.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -321,11 +329,22 @@
     <!-- Section Two Start -->
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 py-5">
           <div class="center-pro">
             <i class="fa-solid fa-arrow-left"></i>
             <h2>New Products</h2>
             <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          <div id="myCarousel" class="owl-carousel owl-theme">
+            <div class="item">
+              <img src="image1.jpg" alt="Image 1" />
+            </div>
+            <div class="item">
+              <img src="image2.jpg" alt="Image 2" />
+            </div>
+            <div class="item">
+              <img src="image3.jpg" alt="Image 3" />
+            </div>
           </div>
         </div>
       </div>
@@ -338,5 +357,27 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#myCarousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,
+          dots: false,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 5,
+            },
+          },
+        });
+      });
+    </script>
   </body>
 </html>
