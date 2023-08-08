@@ -15,7 +15,7 @@
 </head>
 
 <body>
-
+  <?php include 'header.php'; ?>
   <!-- Section One Start-->
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <!-- Indicators (optional) -->
